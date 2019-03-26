@@ -110,7 +110,7 @@ class Command(object):
         args=parser.parse_args(*args)
         build_folder='.'
         if args.build_folder:
-            build_folder=str(args.build_folder)
+            build_folder=''.join(args.build_folder)
 
         print("Build folder "+build_folder)
 
